@@ -10,11 +10,11 @@ pipeline {
 					switch(params.herramienta) {
 						case 'gradle':
 						//ejecutar gradle.groovy
-						def ejecución = load ' gradle.groovy'
+						def ejecución = load 'gradle.groovy'
 						break
 						case 'maven':
 						//ejecutar maven.groovy							
-						def ejecución = load ' maven.groovy'
+						def ejecución = load 'maven.groovy'
 						break						
 					}
 				}
