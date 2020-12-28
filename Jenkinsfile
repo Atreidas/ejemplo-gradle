@@ -26,10 +26,10 @@ pipeline {
 	}
 	post {
 		success {
-			slackSend color: 'good', message: "[${env.NOMBRE_ALUMNO}][${env.JOB_NAME}][${params.herramienta}] Ejecución exitosa.", tokenCredentialId: 'slackedgtests'
+			slackSend color: 'good', message: "[${env.NOMBRE_ALUMNO}][${env.JOB_NAME}][${params.herramienta}] Ejecucion exitosa.", tokenCredentialId: 'slackedgtests'
 		}
 		failure {
-			slackSend color: 'danger', message: "[${env.NOMBRE_ALUMNO}][${env.JOB_NAME}][${params.herramienta}] Ejecución fallida en stage [${env.TAREA}}]", tokenCredentialId: 'slackedgtests'
+			slackSend color: 'danger', message: "[${env.NOMBRE_ALUMNO}][${env.JOB_NAME}][${params.herramienta}] Ejecucion fallida en stage [${env.TAREA}}]", tokenCredentialId: 'slackedgtests'
 		}
 	}
 }
