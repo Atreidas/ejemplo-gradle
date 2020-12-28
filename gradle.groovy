@@ -14,7 +14,7 @@ def call(){
 
     stage('Run'){
         env.TAREA = 'Run' 
-        sh "nohup gradle bootRun &"
+        sh "nohup sdfsd gradle bootRun &"
         sleep 20
     }
 
